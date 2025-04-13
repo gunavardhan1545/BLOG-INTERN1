@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindful Living Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Mindful Living</h1>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <nav id="nav-menu">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main Layout -->
+    <div class="container">
+        <!-- Sidebar -->
+        <aside id="sidebar">
+            <h2>Categories</h2>
+            <ul>
+                <li><a href="#">Wellness</a></li>
+                <li><a href="#">Productivity</a></li>
+                <li><a href="#">Mindfulness</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main>
+            <h2>Latest Blog Posts</h2>
+
+            <!-- Blog Post 1 -->
+            <div class="blog-post">
+                <img src="mindfulness.jpg" alt="Mindfulness Techniques">
+                <h3>5 Simple Mindfulness Techniques to Reduce Stress</h3>
+                <p>Feeling overwhelmed? Mindfulness is a powerful way to regain balance and clarity in your daily life...</p>
+                <button class="read-more" onclick="toggleContent(this)">Read More</button>
+                <p class="hidden-content">
+                    Mindfulness helps center your thoughts and emotions by focusing on the present moment.<br>
+                    Here are 5 techniques to try: <br>
+                    1. <strong>Deep Breathing:</strong> Inhale slowly, hold, and exhale to calm your nervous system.<br>
+                    2. <strong>Body Scan Meditation:</strong> Bring awareness to each part of your body from head to toe.<br>
+                    3. <strong>Gratitude Journaling:</strong> Write down three things you're grateful for each day.<br>
+                    4. <strong>Mindful Walking:</strong> Focus on the sensation of each step and your surroundings.<br>
+                    5. <strong>Digital Detox:</strong> Take breaks from screens to reconnect with yourself and nature.
+                </p>
+            </div>
+
+            <!-- Blog Post 2 -->
+            <div class="blog-post">
+                <img src="morning-routine.jpg" alt="Morning Routine">
+                <h3>Creating a Productive Morning Routine That Sticks</h3>
+                <p>Mornings set the tone for your entire day. A consistent morning routine can boost your focus and motivation...</p>
+                <button class="read-more" onclick="toggleContent(this)">Read More</button>
+                <p class="hidden-content">
+                    Start with small habits and stack them gradually: <br>
+                    - <strong>Wake Up Early:</strong> Give yourself time to ease into the day.<br>
+                    - <strong>Hydrate First Thing:</strong> A glass of water helps jumpstart your system.<br>
+                    - <strong>Move Your Body:</strong> Stretch, walk, or do yoga for energy and clarity.<br>
+                    - <strong>Plan the Day:</strong> Write down your top 3 priorities.<br>
+                    - <strong>Practice Gratitude or Meditation:</strong> Set a positive mindset.
+                </p>
+            </div>
+
+            <!-- Blog Post 3 -->
+            <div class="blog-post">
+                <img src="say-no.jpg" alt="Saying No">
+                <h2>The Power of Saying No: Protecting Your Energy</h2>
+                <p class="short-text">
+                    Saying “no” can feel hard, but it’s essential for maintaining boundaries and reducing burnout...
+                </p>
+                <p class="full-text" style="display: none;">
+                    Learning to say no lets you: <br>
+                    - <strong>Avoid Overcommitment:</strong> Focus on what truly matters.<br>
+                    - <strong>Set Healthy Boundaries:</strong> Say yes to yourself by saying no to others.<br>
+                    - <strong>Reduce Stress:</strong> Fewer obligations means more peace.<br>
+                    - <strong>Empower Yourself:</strong> You have the right to protect your time and energy.<br><br>
+                    Practice with kindness, like: “Thanks for asking, but I can’t commit right now.”
+                </p>
+                <a href="#" class="read-more-btn">Read More</a>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Mindful Living. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
